@@ -1,5 +1,5 @@
 import streamlit as st
-import numpy as npS
+import numpy as np
 import plotly.express as px
 import pandas as pd
 from streamlit_drawable_canvas import st_canvas
