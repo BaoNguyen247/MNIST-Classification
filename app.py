@@ -11,8 +11,9 @@ import json
 # Load your SVM model with st.cache
 @st.cache
 def load_model():
-    model_file = open("results_svm/specify_rbf/svm_model_rbf_C4.pickle", "rb")
-    return pickle.load(model_file)
+    with open("results_svm/specify_rbf/svm_model_rbf_C4.pickle", "rb") as model_file:
+        model = pickle.load(model_file)
+    return model
 
 
 st.markdown(
