@@ -16,7 +16,7 @@ os.makedirs(output_directory, exist_ok=True)
 (x_train, y_train), (X_test, y_test) = tf.keras.datasets.mnist.load_data()
 
 # Randomly select `num_images_to_extract` images from the dataset
-random_indices = np.random.choice(len(x_train), num_images_to_extract, replace=False)
+random_indices = np.random.choice(len(X_test), num_images_to_extract, replace=False)
 
 # Iterate through the selected indices and save the images as PNG files
 for idx, image_idx in enumerate(random_indices):
